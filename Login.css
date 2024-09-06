@@ -1,0 +1,60 @@
+header {
+    background-color: #000000;
+    padding-left: 10mm;
+    
+}
+
+body {
+    background-color: #141414;
+}
+
+/*CREA EL CUADRO*/
+.cuadro {
+    
+    background-color: black;
+    color: white;
+
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1); /* Agrega una sombra al contenedor */    
+
+    width: 30%; /* Ancho del contenedor */
+    height: 60%; /* Altura del contenedor */
+    
+    text-align: center;
+
+    
+    
+}
+
+.cuadro h2 {
+    font-size: 30px; /* Tamaño de fuente para el título */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.cuadro input[type="text"],
+.cuadro input[type="password"],
+.cuadro button {
+    font-size: 18px; /* Tamaño de fuente para los campos de entrada y botón */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#margen {
+    margin-block-end: 20px;    
+
+}
+
+button {
+    background-color: rgb(87, 221, 87);
+    color: white;
+}
+
+/*CAMBIA LA POSICION DEL CUADRO*/
+.posicion {
+    /*Ajusta la posición del cuadro*/
+    display:flex;
+    justify-content: center; /* Centrar horizontalmente el contenido */
+    align-items: center; /* Centrar verticalmente el contenido */
+    height: 100vh; /* Ajusta la altura del contenedor para que ocupe toda la altura de la ventana */
+    
+}
