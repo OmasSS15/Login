@@ -1,42 +1,59 @@
-header {
-    background-color: #000000;
-    padding-left: 10mm;
-    
-}
-
 body {
-    background-color: #141414;
+    background-color: #1a1919ee;
 }
 
 /*CREA EL CUADRO*/
 .cuadro {
-    
-    background-color: black;
-    color: white;
+    display: flex;
+    justify-content: space-between; /* Distribuye los elementos en el espacio horizontal */
+    align-items: center; /* Centra verticalmente */
 
-    border-radius: 10px;
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1); /* Agrega una sombra al contenedor */    
+    background-color: rgb(186, 74, 0);
+    color: black;
 
-    width: 30%; /* Ancho del contenedor */
-    height: 60%; /* Altura del contenedor */
+    border-radius: 40px;
+    padding: 0px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.507); /* Agrega una sombra al contenedor */    
+
+    width: 50%; /* Ancho del contenedor */
+    height: auto; /* Altura del contenedor */
     
-    text-align: center;
+    position: relative; /* Asegura que el cuadro del logo se quede pegado al borde */
+    
+    /*text-align: center;*/
 
     
     
 }
 
-.cuadro h2 {
-    font-size: 30px; /* Tamaño de fuente para el título */
+/* Contenedor del formulario de inicio de sesión */
+.cuadro_left {
+    width: 70%; /* Ocupa el 70% del cuadro */
+    text-align: center;
+    background-color: white;
+    border-radius: 20px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transform: scale(0.7); /* Escala proporcionalmente el contenido al 80% */
+    margin-left: -42px;
+}
+
+.cuadro_left h2 {
+    font-size: 2vw; /* Tamaño de fuente para el título */
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-.cuadro input[type="text"],
-.cuadro input[type="password"],
-.cuadro button {
-    font-size: 18px; /* Tamaño de fuente para los campos de entrada y botón */
+.cuadro_left input[type="text"],
+.cuadro_left input[type="password"],
+.cuadro_left button {
+    font-size: 1.5vw; /* Tamaño de fuente proporcional a la ventana */
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 80%; /* Ajusta el ancho de los campos al 80% del contenedor */
+    margin: 4px;
+    border-radius: 15px;
 }
 
 #margen {
@@ -45,7 +62,7 @@ body {
 }
 
 button {
-    background-color: rgb(87, 221, 87);
+    background-color: rgb(39, 39, 39);
     color: white;
 }
 
@@ -55,6 +72,33 @@ button {
     display:flex;
     justify-content: center; /* Centrar horizontalmente el contenido */
     align-items: center; /* Centrar verticalmente el contenido */
-    height: 100vh; /* Ajusta la altura del contenedor para que ocupe toda la altura de la ventana */
+    height: 100vh /* Ajusta la altura del contenedor para que ocupe toda la altura de la ventana */
     
+}
+
+/* Cuadro para el logo */
+.cuadro_logo {
+    background-color: black;
+    border-radius: 0px 40px 40px 0px;
+    padding: 10px;
+    /*box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);*/
+    width: 35%; /* Ocupa el 30% del cuadro principal */
+    height: 96%; /* Ocupa toda la altura del cuadro principal */
+    display: flex; /* Flexbox para centrar el logo */
+    justify-content: center; /* Centra horizontalmente el logo */
+    align-items: center; /* Centra verticalmente el logo */
+    position: absolute;
+    top: 0;
+    right: 0; /* Asegura que el cuadro esté pegado al borde derecho */
+}
+
+.cuadro_logo img {
+    max-width: 80%; /* Asegura que el logo no sea más grande que el cuadro */
+    height: auto;
+    border-radius: 140px;
+}
+
+label {
+    font-size: 1.2vw; /* Tamaño de fuente para el título */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }

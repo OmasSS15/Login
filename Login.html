@@ -7,17 +7,12 @@
     <link rel="stylesheet" href="Login.css">
 </head>
 <body>
-    <header>
-        <img src="Imagen2/SPOTIFY.png" alt="LOGO" width="146" height="90">
-    </header>
     <main>
         <section class="posicion">
             <nav class="cuadro">
-                <article>
-                    <img src="Imagen2/SPOTIFY2.png" alt="LOGO" width="64" height="64">                    
-                    <hr>
+                <article class="cuadro_left">
+                    <img src="perfil.png" alt="Perfil" width="128" height="128">                    
                     <h2>Iniciar Sesión</h2> 
-                    <br>
                     <!--action te lleva al link cuando presionas al botón-->                     
                     <form>                                              
                         <input type="text" placeholder="Usuario">
@@ -26,10 +21,14 @@
                         <input type="password" placeholder="Contraseña">
                         <br>
                         <br>
-                        <button type="submit" id="margen">Iniciar Sesión</button>                        
-                        <hr>                        
+                        <button type="submit" id="margen">Acceder</button> 
+                        <br>
+                        <label>¿No tienes una cuenta? <a href="">Registrate</a></label>                       
                     </form>                    
                 </article>
+                <nav class="cuadro_logo">
+                    <img src="ZORRO.jpg" alt="Logo"> <!-- Cambia el src por la imagen que desees -->
+                </nav>
             </nav>                        
         </section>
     </main>
