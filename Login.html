@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link rel="stylesheet" href="Login.css">
+    
 </head>
 <body>
     <main>
@@ -14,11 +15,11 @@
                     <img src="perfil.png" alt="Perfil" width="128" height="128">                    
                     <h2>Iniciar Sesión</h2> 
                     <!--action te lleva al link cuando presionas al botón-->                     
-                    <form>                                              
-                        <input type="text" placeholder="Usuario">
+                    <form id="loginForm">                                              
+                        <input type="text" id="usuario" placeholder="Usuario">
                         <br>
                         <br>
-                        <input type="password" placeholder="Contraseña">
+                        <input type="password" id="contrasena" placeholder="Contraseña">
                         <br>
                         <br>
                         <button type="submit" id="margen">Acceder</button> 
@@ -27,10 +28,11 @@
                     </form>                    
                 </article>
                 <nav class="cuadro_logo">
-                    <img src="ZORRO.jpg" alt="Logo"> <!-- Cambia el src por la imagen que desees -->
+                    <img src="ZORRO.jpg" alt="Logo"> 
                 </nav>
             </nav>                        
         </section>
     </main>
 </body>
+<script src="login.js"></script>
 </html>
